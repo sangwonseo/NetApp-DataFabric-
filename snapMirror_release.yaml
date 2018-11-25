@@ -1,5 +1,6 @@
 ---
-- hosts: localhost
+- name: ontap
+  hosts: localhost
   gather_facts: false 
   connection: local
   tasks: 
@@ -20,4 +21,4 @@
   gather_facts: false
   tasks:
     - name: Release SnapMirror 
-      raw: snapmirror release -destination-path svm_CVO:ansible_target -force
+      raw: snapmirror release -destination-path svm_CVO:ansible_target -forc
