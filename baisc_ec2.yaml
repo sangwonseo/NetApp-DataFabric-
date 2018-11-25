@@ -16,7 +16,7 @@
       assign_public_ip: yes
       wait: yes
       instance_tags:
-        Name: Centos 
+        Name: RedHat 
         Project: Data Fabric 
-        Env: Centos  
+        Env: Demo 
     register: ec2
