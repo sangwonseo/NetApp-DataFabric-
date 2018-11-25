@@ -16,7 +16,7 @@
       username: "{{ username }}"
       password: "{{ password }}"
       
-- hosts: 49.254.105.123
+- hosts: On-Premise ONTAP
   gather_facts: no
   tasks:
     - name: Release SnapMirror 
