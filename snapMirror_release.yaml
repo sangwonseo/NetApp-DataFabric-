@@ -21,4 +21,4 @@
   gather_facts: false
   tasks:
     - name: Release SnapMirror 
-      raw: snapmirror release -destination-path svm_CVO:ansible_target -forc
+      raw: snapmirror release -destination-path svm_CVO:ansible_target -force
