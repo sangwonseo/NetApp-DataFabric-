@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   gather_facts: false 
-  name: ontap snapmirror 
+  connection: local
   tasks: 
   - name: Remove SnapMirror
     na_ontap_snapmirror: 
@@ -17,7 +17,7 @@
       password: "{{ password }}"
       
 - hosts: 49.254.105.123
-  gather_facts: no
+  gather_facts: false
   tasks:
     - name: Release SnapMirror 
       raw: snapmirror release -destination-path svm_CVO:ansible_target -force
