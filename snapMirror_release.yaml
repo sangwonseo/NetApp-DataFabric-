@@ -16,10 +16,8 @@
       username: "{{ username }}"
       password: "{{ password }}"
       
-  - name: Release SnapMirror
-    na_ontap_snapmirror:
-      state: release
-      destination_path: svm_CVO:ansible_target
-      hostname: "{{ hostname }}"
-      username: "{{ username }}"
-      password: "{{ password }}"     
+- hosts: 49.254.105.123
+  gather_facts: no
+  tasks:
+    - name: Release SnapMirror 
+      raw: snapmirror release -destination-path svm_CVO:ansible_target -force
