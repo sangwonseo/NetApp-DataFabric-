@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: tag_Env_Demo
+  hosts: 49.254.105.77
   become: yes
   tasks:
   - name: Install the httpd rpm
