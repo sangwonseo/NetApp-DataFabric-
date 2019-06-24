@@ -8,7 +8,7 @@
     username: "{{ username }}"
     password: "{{ password }}"
     vserver:  "{{ vserver }}"
-    aggr: "{{ agg }}"
+    aggr: "{{ aggr }}"
     vol_name: "{{ vol_name }}"
 
   tasks:
